@@ -102,7 +102,7 @@ foreach($nmeaFileNames as $i => $nmeaFileName){
 	$handles[] = $handle;
 }
 if(!$handles) exit("No logs to play, bye.\n");
-echo "\Sending ".implode(',',$nmeaFileNames)." with delay {$delay}ms per string\n";
+echo "\rSending ".implode(',',$nmeaFileNames)." with delay {$delay}ms per string\n";
 echo "\n";
 while ($conn) { 	// 
 	foreach($handles as $i => $handle) {
